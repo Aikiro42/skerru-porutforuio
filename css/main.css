@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: var(--body-background-color);
+	min-width: 1024px;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+	font-family: inherit;
+}
+
+.clear{
+	clear: both;
+}
+
+.caption{
+	display: none;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+.viewable{
+	cursor: pointer;
+}
+
+div.back-button{
+	
+}
+
+div#media-viewer{
+	display: none;
+	z-index: 9;
+	background: rgba(0,0,0,0.75);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+div#media-viewer div#media-viewer-container img{
+	object-fit: contain;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+div#media-viewer img#close-viewer{
+	z-index: 999;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+div#media-viewer img#close-viewer:hover{
+	background: white;
+}
+
+div#media-viewer img#close-viewer:active{
+	background: red;
+}
+
+
+
+header{
+	background-image: url('../img/pewds-bg.jpg');
+	color: var(--header-text-color);
+	height: var(--header-height);
+	padding-left: calc(var(--header-height)*0.1);
+}
+
+header *{
+	line-height: var(--header-height);
+	font-size: calc(var(--header-height) - 0.05*var(--header-height));
+	text-outline: 2px black solid;
+	text-shadow: black 0 0 10px;
+}
+
+header img.emoji{
+	height: calc(var(--header-height) - 0.25*var(--header-height));
+}
+
+header span.scale-letter{
+	font-family: "Impact";
+}
+
+header span.scale-button{
+	cursor: pointer;
+}
+
+header span#review{
+	font-family: "Times New Roman";
+	margin-left: calc(var(--header-height)*0.25);
+	
+}
+
+div#wrapper, div#activity-wrapper{
+	width: 60%;
+	min-width: calc(0.9*var(--min-website-width));
+	margin: auto;
+	background: rgba(0,0,0,0.25);
+	padding: 2% 2%;
+}

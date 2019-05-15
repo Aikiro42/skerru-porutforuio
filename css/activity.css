@@ -1,0 +1,82 @@
+div#activity-wrapper{
+	padding-top: 0;
+	font-family: "Segoe UI Light", sans-serif;
+	color: white;
+}
+
+div#activity-wrapper img{
+	object-fit: cover;
+}
+
+div#activity-wrapper div.activity-container img.activity-banner{
+	object-fit: cover;
+	width: 100%;
+	height: 50%;
+	margin-bottom: 2%;
+}
+
+div#activity-wrapper div.activity-container h1, p{
+	margin-bottom: 2%;
+}
+
+div#activity-wrapper div.activity-container div.misc-container{
+	width: 80%;
+	margin: auto;
+}
+
+div#activity-wrapper div.activity-container div.image-series-container{
+	margin: auto;
+}
+
+div#activity-wrapper div.activity-container div.image-series-container *{
+	float: left;
+	width: 49%;
+	height: 200px;
+	margin: 0.5%;
+	object-fit: cover;
+}
+
+div#activity-wrapper div.activity-container div.pdf-download-container{
+	width: 100%;
+}
+
+div#activity-wrapper div.activity-container div.pdf-download-container a{
+	display: block;
+	width: 100%;
+	height: 50px;
+	background: rgba(255,255,255,0.0625);
+	margin: 0.5% 0;
+	padding: 1%;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+div#activity-wrapper div.activity-container div.pdf-download-container a:hover{
+	font-weight: bold;
+	background: rgba(255,255,255,0.5);
+	color: black;
+}
+
+div#activity-wrapper div.activity-container div.pdf-download-container a:active{
+	background: black;
+	color: white;
+}
+
+
+
+div#activity-wrapper div.activity-container div.pdf-download-container a *{
+	float: left;
+}
+
+
+div#activity-wrapper div.activity-container div.pdf-download-container a img.icon{
+	display: inline-block;
+	height: 100%;
+}
+
+div#activity-wrapper div.activity-container div.pdf-download-container a span.file-name{
+	display: inline-block;
+	line-height: 50px;
+	margin-left: 3%;
+}

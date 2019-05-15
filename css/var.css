@@ -1,0 +1,12 @@
+:root{
+	
+	--min-website-width: 1024px;
+	
+	--body-background-color: rgb(53,53,53);
+	
+	--header-height: 75px;
+	--header-background-color: rgba(24,178,232,0.25);
+	--header-text-color: white;
+	
+	--transition: background 0.1s, color 0.1s;
+}
